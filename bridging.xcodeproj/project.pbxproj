@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D6078D41BF0A70C0080BFBB /* popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6078D31BF0A70C0080BFBB /* popup.storyboard */; };
-		4D6078D61BF0A7650080BFBB /* popup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6078D51BF0A7650080BFBB /* popup2.swift */; };
+		4D5CEA221C185C7B00373148 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 4D5CEA211C185C7B00373148 /* www */; };
 		4D6CE16A1BF098130023F685 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6CE1681BF098130023F685 /* popup.swift */; };
 		4D6CE16B1BF098130023F685 /* popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6CE1691BF098130023F685 /* popup.xib */; };
 		4D9E06401BC72AD1009B1499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E063F1BC72AD1009B1499 /* AppDelegate.swift */; };
@@ -18,7 +17,6 @@
 		4D9E064A1BC72AD1009B1499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E06481BC72AD1009B1499 /* LaunchScreen.storyboard */; };
 		4D9E06551BC72AD1009B1499 /* swift_bridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E06541BC72AD1009B1499 /* swift_bridgeTests.swift */; };
 		4D9E06601BC72AD2009B1499 /* swift_bridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */; };
-		4D9E066E1BC73402009B1499 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E066D1BC73402009B1499 /* html */; };
 		4DDD90FE1BCF591300D4CB8B /* my_functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD90FD1BCF591300D4CB8B /* my_functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D6078D31BF0A70C0080BFBB /* popup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = popup.storyboard; sourceTree = "<group>"; };
-		4D6078D51BF0A7650080BFBB /* popup2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popup2.swift; sourceTree = "<group>"; };
+		4D5CEA211C185C7B00373148 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		4D6CE1681BF098130023F685 /* popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popup.swift; sourceTree = "<group>"; };
 		4D6CE1691BF098130023F685 /* popup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popup.xib; sourceTree = "<group>"; };
 		4D9E063C1BC72AD1009B1499 /* sw_bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sw_bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +54,6 @@
 		4D9E065B1BC72AD2009B1499 /* bridging.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridging.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridgeUITests.swift; sourceTree = "<group>"; };
 		4D9E06611BC72AD2009B1499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D9E066D1BC73402009B1499 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		4DDD90FD1BCF591300D4CB8B /* my_functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = my_functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,10 +94,8 @@
 		4D9E06331BC72AD1009B1499 = {
 			isa = PBXGroup;
 			children = (
-				4D6078D31BF0A70C0080BFBB /* popup.storyboard */,
-				4D6078D51BF0A7650080BFBB /* popup2.swift */,
+				4D5CEA211C185C7B00373148 /* www */,
 				4D6CE1671BF098130023F685 /* popup */,
-				4D9E066D1BC73402009B1499 /* html */,
 				4D9E063E1BC72AD1009B1499 /* bridecode */,
 				4D9E06531BC72AD1009B1499 /* swift_bridgeTests */,
 				4D9E065E1BC72AD2009B1499 /* swift_bridgeUITests */,
@@ -257,9 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9E064A1BC72AD1009B1499 /* LaunchScreen.storyboard in Resources */,
-				4D6078D41BF0A70C0080BFBB /* popup.storyboard in Resources */,
+				4D5CEA221C185C7B00373148 /* www in Resources */,
 				4D6CE16B1BF098130023F685 /* popup.xib in Resources */,
-				4D9E066E1BC73402009B1499 /* html in Resources */,
 				4D9E06471BC72AD1009B1499 /* Assets.xcassets in Resources */,
 				4D9E06451BC72AD1009B1499 /* Main.storyboard in Resources */,
 			);
@@ -289,7 +282,6 @@
 				4D9E06421BC72AD1009B1499 /* ViewController.swift in Sources */,
 				4DDD90FE1BCF591300D4CB8B /* my_functions.swift in Sources */,
 				4D6CE16A1BF098130023F685 /* popup.swift in Sources */,
-				4D6078D61BF0A7650080BFBB /* popup2.swift in Sources */,
 				4D9E06401BC72AD1009B1499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +427,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/bridge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sw-brige";
+				PRODUCT_BUNDLE_IDENTIFIER = webview6;
 				PRODUCT_NAME = sw_bridge;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -448,7 +440,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/bridge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sw-brige";
+				PRODUCT_BUNDLE_IDENTIFIER = webview6;
 				PRODUCT_NAME = sw_bridge;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

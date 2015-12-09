@@ -1,0 +1,32 @@
+<style> 
+body{
+background: gray;
+}
+</style>
+<body>
+<h1 id="exchange"> this is local display for exchange </h1>
+<button onclick="call_ios_reset()"> clear IOS label</button>
+<button onclick="call_ios_exchange()"> send data</button>
+
+
+
+</body>
+<script type="text/javascript">
+    
+    function call_ios_reset() {
+         window.location = 'bridge:reset';
+     }
+
+    function call_ios_exchange() {
+        myparam ="package from JS";
+        window.location = 'bridge:exchange?param=' + myparam;
+         }
+
+//IOS will call this method and pass data back thru the param data
+    function js_show_data(data) {
+        alert("here " + data);
+        document.getElementById("exchange").innerHTML = data;
+        return "this is something back from JS";
+      }
+
+</script>

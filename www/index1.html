@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple bridge to Swift</title>
+  <style>
+      * {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+      </style>
+</head>
+<body>
+ <h1 id="exchange">Simple Bridge</h1>
+  
+  <button onclick="call_ios_alert()"> call alert from IOS native </button>
+  <button onclick="call_js_alert()"> alert from JavaSript </button>
+  <button onclick="call_ios_popup()"> send link to IOS to popup</button>
+  <button onclick="ios_pop_message()">IOS Notification </button>
+  <button onclick="call_geo()">Get Geolocation from OS </button>
+</body>
+
+  <script type="text/javascript">
+
+function call_geo() {
+      myparam ="";
+      window.location = 'bridge:ios_geo';
+  }
+//call from IOS to use this function
+  function ios_to_js(txt){
+      document.getElementById("exchange").innerHTML = txt;
+      return "this is the data from js";
+  }
+  function call_ios_alert() {
+      myparam ="message from JS + alert from IOS";
+      window.location = 'bridge:ios_alert?param=' + myparam;
+       }
+  
+  function call_js_alert() {
+      alert("alert from js, looks ugly with the html file name on top");
+  }
+  
+  function call_ios_popup() {
+      window.location = 'bridge:ios_popup?param=' + 'www/index2.html';
+  }
+  
+  function ios_pop_message(text) {
+      var countdownElement = document.getElementById('exchange'),
+      seconds = 5,
+      second = 0,
+      interval;
+      interval = setInterval(function() {
+                             countdownElement.firstChild.data = 'IOS notification in ' + (seconds - second) + ' seconds';
+                             if (second >= seconds) {
+                             clearInterval(interval);
+                             myparam = "you won a Ferari! isnt it cool?";
+                             window.location ='bridge:ios_pop_message?param=' + myparam;
+                             }
+                             second++; }, 1000);
+  }
+  
+  </script>
+
+
+</html>

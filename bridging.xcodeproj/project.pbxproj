@@ -19,7 +19,6 @@
 		4D9E06551BC72AD1009B1499 /* swift_bridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E06541BC72AD1009B1499 /* swift_bridgeTests.swift */; };
 		4D9E06601BC72AD2009B1499 /* swift_bridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */; };
 		4D9E066E1BC73402009B1499 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E066D1BC73402009B1499 /* html */; };
-		4DD534631BDF43030018FDFC /* screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD534621BDF43030018FDFC /* screen2.swift */; };
 		4DDD90FE1BCF591300D4CB8B /* my_functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD90FD1BCF591300D4CB8B /* my_functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridgeUITests.swift; sourceTree = "<group>"; };
 		4D9E06611BC72AD2009B1499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D9E066D1BC73402009B1499 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
-		4DD534621BDF43030018FDFC /* screen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screen2.swift; sourceTree = "<group>"; };
 		4DDD90FD1BCF591300D4CB8B /* my_functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = my_functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +129,6 @@
 				4D9E06461BC72AD1009B1499 /* Assets.xcassets */,
 				4D9E06481BC72AD1009B1499 /* LaunchScreen.storyboard */,
 				4D9E064B1BC72AD1009B1499 /* Info.plist */,
-				4DD534621BDF43030018FDFC /* screen2.swift */,
 			);
 			name = bridecode;
 			path = bridge;
@@ -293,7 +290,6 @@
 				4DDD90FE1BCF591300D4CB8B /* my_functions.swift in Sources */,
 				4D6CE16A1BF098130023F685 /* popup.swift in Sources */,
 				4D6078D61BF0A7650080BFBB /* popup2.swift in Sources */,
-				4DD534631BDF43030018FDFC /* screen2.swift in Sources */,
 				4D9E06401BC72AD1009B1499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

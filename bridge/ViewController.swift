@@ -68,7 +68,7 @@ let locationManager = CLLocationManager();
     // run javascript on the page with result = call_js("js_fn", param:"rarameter");
     func call_js(function_name: String, param: String) -> String{
         var result = "";
-        var full_path = function_name + "('" + param + "')";
+        let full_path = function_name + "('" + param + "')";
         print("Run javascript: \(full_path)");
         
         result = webView.stringByEvaluatingJavaScriptFromString(full_path)!;

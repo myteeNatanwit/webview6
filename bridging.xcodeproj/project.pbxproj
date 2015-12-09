@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D5CEA221C185C7B00373148 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 4D5CEA211C185C7B00373148 /* www */; };
+		4D5CEA2A1C18DA2800373148 /* sw_bridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5CEA291C18DA2800373148 /* sw_bridgeUITests.swift */; };
+		4D5CEA381C18DB2800373148 /* sw_bridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5CEA371C18DB2800373148 /* sw_bridgeTests.swift */; };
 		4D6CE16A1BF098130023F685 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6CE1681BF098130023F685 /* popup.swift */; };
 		4D6CE16B1BF098130023F685 /* popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6CE1691BF098130023F685 /* popup.xib */; };
 		4D9E06401BC72AD1009B1499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E063F1BC72AD1009B1499 /* AppDelegate.swift */; };
@@ -15,30 +17,34 @@
 		4D9E06451BC72AD1009B1499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E06431BC72AD1009B1499 /* Main.storyboard */; };
 		4D9E06471BC72AD1009B1499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E06461BC72AD1009B1499 /* Assets.xcassets */; };
 		4D9E064A1BC72AD1009B1499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E06481BC72AD1009B1499 /* LaunchScreen.storyboard */; };
-		4D9E06551BC72AD1009B1499 /* swift_bridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E06541BC72AD1009B1499 /* swift_bridgeTests.swift */; };
-		4D9E06601BC72AD2009B1499 /* swift_bridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */; };
 		4DDD90FE1BCF591300D4CB8B /* my_functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD90FD1BCF591300D4CB8B /* my_functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D9E06511BC72AD1009B1499 /* PBXContainerItemProxy */ = {
+		4D5CEA2C1C18DA2800373148 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D9E06341BC72AD1009B1499 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D9E063B1BC72AD1009B1499;
-			remoteInfo = swift_bridge;
+			remoteInfo = bridging;
 		};
-		4D9E065C1BC72AD2009B1499 /* PBXContainerItemProxy */ = {
+		4D5CEA3A1C18DB2800373148 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D9E06341BC72AD1009B1499 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D9E063B1BC72AD1009B1499;
-			remoteInfo = swift_bridge;
+			remoteInfo = bridging;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D5CEA211C185C7B00373148 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		4D5CEA271C18DA2800373148 /* sw_bridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sw_bridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5CEA291C18DA2800373148 /* sw_bridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sw_bridgeUITests.swift; sourceTree = "<group>"; };
+		4D5CEA2B1C18DA2800373148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5CEA351C18DB2800373148 /* sw_bridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sw_bridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5CEA371C18DB2800373148 /* sw_bridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sw_bridgeTests.swift; sourceTree = "<group>"; };
+		4D5CEA391C18DB2800373148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6CE1681BF098130023F685 /* popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popup.swift; sourceTree = "<group>"; };
 		4D6CE1691BF098130023F685 /* popup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popup.xib; sourceTree = "<group>"; };
 		4D9E063C1BC72AD1009B1499 /* sw_bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sw_bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,31 +54,25 @@
 		4D9E06461BC72AD1009B1499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D9E06491BC72AD1009B1499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D9E064B1BC72AD1009B1499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D9E06501BC72AD1009B1499 /* bridging.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridging.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D9E06541BC72AD1009B1499 /* swift_bridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridgeTests.swift; sourceTree = "<group>"; };
-		4D9E06561BC72AD1009B1499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D9E065B1BC72AD2009B1499 /* bridging.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridging.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bridgeUITests.swift; sourceTree = "<group>"; };
-		4D9E06611BC72AD2009B1499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDD90FD1BCF591300D4CB8B /* my_functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = my_functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D5CEA241C18DA2800373148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5CEA321C18DB2800373148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D9E06391BC72AD1009B1499 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D9E064D1BC72AD1009B1499 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D9E06581BC72AD1009B1499 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D5CEA281C18DA2800373148 /* sw_bridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5CEA291C18DA2800373148 /* sw_bridgeUITests.swift */,
+				4D5CEA2B1C18DA2800373148 /* Info.plist */,
+			);
+			path = sw_bridgeUITests;
+			sourceTree = "<group>";
+		};
+		4D5CEA361C18DB2800373148 /* sw_bridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5CEA371C18DB2800373148 /* sw_bridgeTests.swift */,
+				4D5CEA391C18DB2800373148 /* Info.plist */,
+			);
+			path = sw_bridgeTests;
+			sourceTree = "<group>";
+		};
 		4D6CE1671BF098130023F685 /* popup */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +115,8 @@
 				4D5CEA211C185C7B00373148 /* www */,
 				4D6CE1671BF098130023F685 /* popup */,
 				4D9E063E1BC72AD1009B1499 /* bridecode */,
-				4D9E06531BC72AD1009B1499 /* swift_bridgeTests */,
-				4D9E065E1BC72AD2009B1499 /* swift_bridgeUITests */,
+				4D5CEA281C18DA2800373148 /* sw_bridgeUITests */,
+				4D5CEA361C18DB2800373148 /* sw_bridgeTests */,
 				4D9E063D1BC72AD1009B1499 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				4D9E063C1BC72AD1009B1499 /* sw_bridge.app */,
-				4D9E06501BC72AD1009B1499 /* bridging.xctest */,
-				4D9E065B1BC72AD2009B1499 /* bridging.xctest */,
+				4D5CEA271C18DA2800373148 /* sw_bridgeUITests.xctest */,
+				4D5CEA351C18DB2800373148 /* sw_bridgeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,27 +146,45 @@
 			path = bridge;
 			sourceTree = "<group>";
 		};
-		4D9E06531BC72AD1009B1499 /* swift_bridgeTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D9E06541BC72AD1009B1499 /* swift_bridgeTests.swift */,
-				4D9E06561BC72AD1009B1499 /* Info.plist */,
-			);
-			path = swift_bridgeTests;
-			sourceTree = "<group>";
-		};
-		4D9E065E1BC72AD2009B1499 /* swift_bridgeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D9E065F1BC72AD2009B1499 /* swift_bridgeUITests.swift */,
-				4D9E06611BC72AD2009B1499 /* Info.plist */,
-			);
-			path = swift_bridgeUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D5CEA261C18DA2800373148 /* sw_bridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5CEA301C18DA2800373148 /* Build configuration list for PBXNativeTarget "sw_bridgeUITests" */;
+			buildPhases = (
+				4D5CEA231C18DA2800373148 /* Sources */,
+				4D5CEA241C18DA2800373148 /* Frameworks */,
+				4D5CEA251C18DA2800373148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5CEA2D1C18DA2800373148 /* PBXTargetDependency */,
+			);
+			name = sw_bridgeUITests;
+			productName = sw_bridgeUITests;
+			productReference = 4D5CEA271C18DA2800373148 /* sw_bridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4D5CEA341C18DB2800373148 /* sw_bridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5CEA3C1C18DB2800373148 /* Build configuration list for PBXNativeTarget "sw_bridgeTests" */;
+			buildPhases = (
+				4D5CEA311C18DB2800373148 /* Sources */,
+				4D5CEA321C18DB2800373148 /* Frameworks */,
+				4D5CEA331C18DB2800373148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5CEA3B1C18DB2800373148 /* PBXTargetDependency */,
+			);
+			name = sw_bridgeTests;
+			productName = sw_bridgeTests;
+			productReference = 4D5CEA351C18DB2800373148 /* sw_bridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4D9E063B1BC72AD1009B1499 /* bridging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D9E06641BC72AD2009B1499 /* Build configuration list for PBXNativeTarget "bridging" */;
@@ -166,62 +202,27 @@
 			productReference = 4D9E063C1BC72AD1009B1499 /* sw_bridge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4D9E064F1BC72AD1009B1499 /* bridgingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D9E06671BC72AD2009B1499 /* Build configuration list for PBXNativeTarget "bridgingTests" */;
-			buildPhases = (
-				4D9E064C1BC72AD1009B1499 /* Sources */,
-				4D9E064D1BC72AD1009B1499 /* Frameworks */,
-				4D9E064E1BC72AD1009B1499 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D9E06521BC72AD1009B1499 /* PBXTargetDependency */,
-			);
-			name = bridgingTests;
-			productName = swift_bridgeTests;
-			productReference = 4D9E06501BC72AD1009B1499 /* bridging.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4D9E065A1BC72AD1009B1499 /* bridgingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D9E066A1BC72AD2009B1499 /* Build configuration list for PBXNativeTarget "bridgingUITests" */;
-			buildPhases = (
-				4D9E06571BC72AD1009B1499 /* Sources */,
-				4D9E06581BC72AD1009B1499 /* Frameworks */,
-				4D9E06591BC72AD1009B1499 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D9E065D1BC72AD2009B1499 /* PBXTargetDependency */,
-			);
-			name = bridgingUITests;
-			productName = swift_bridgeUITests;
-			productReference = 4D9E065B1BC72AD2009B1499 /* bridging.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4D9E06341BC72AD1009B1499 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = intcloud;
 				TargetAttributes = {
+					4D5CEA261C18DA2800373148 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4D9E063B1BC72AD1009B1499;
+					};
+					4D5CEA341C18DB2800373148 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4D9E063B1BC72AD1009B1499;
+					};
 					4D9E063B1BC72AD1009B1499 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = VTRUVT3ZRQ;
-					};
-					4D9E064F1BC72AD1009B1499 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 4D9E063B1BC72AD1009B1499;
-					};
-					4D9E065A1BC72AD1009B1499 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 4D9E063B1BC72AD1009B1499;
 					};
 				};
 			};
@@ -239,13 +240,27 @@
 			projectRoot = "";
 			targets = (
 				4D9E063B1BC72AD1009B1499 /* bridging */,
-				4D9E064F1BC72AD1009B1499 /* bridgingTests */,
-				4D9E065A1BC72AD1009B1499 /* bridgingUITests */,
+				4D5CEA261C18DA2800373148 /* sw_bridgeUITests */,
+				4D5CEA341C18DB2800373148 /* sw_bridgeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D5CEA251C18DA2800373148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5CEA331C18DB2800373148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D9E063A1BC72AD1009B1499 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,23 +273,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D9E064E1BC72AD1009B1499 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D9E06591BC72AD1009B1499 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D5CEA231C18DA2800373148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5CEA2A1C18DA2800373148 /* sw_bridgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5CEA311C18DB2800373148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5CEA381C18DB2800373148 /* sw_bridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D9E06381BC72AD1009B1499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,34 +303,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D9E064C1BC72AD1009B1499 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D9E06551BC72AD1009B1499 /* swift_bridgeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D9E06571BC72AD1009B1499 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D9E06601BC72AD2009B1499 /* swift_bridgeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D9E06521BC72AD1009B1499 /* PBXTargetDependency */ = {
+		4D5CEA2D1C18DA2800373148 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D9E063B1BC72AD1009B1499 /* bridging */;
-			targetProxy = 4D9E06511BC72AD1009B1499 /* PBXContainerItemProxy */;
+			targetProxy = 4D5CEA2C1C18DA2800373148 /* PBXContainerItemProxy */;
 		};
-		4D9E065D1BC72AD2009B1499 /* PBXTargetDependency */ = {
+		4D5CEA3B1C18DB2800373148 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D9E063B1BC72AD1009B1499 /* bridging */;
-			targetProxy = 4D9E065C1BC72AD2009B1499 /* PBXContainerItemProxy */;
+			targetProxy = 4D5CEA3A1C18DB2800373148 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -337,6 +338,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D5CEA2E1C18DA2800373148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = sw_bridgeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.intcloud.sw-bridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bridging;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4D5CEA2F1C18DA2800373148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = sw_bridgeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.intcloud.sw-bridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bridging;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		4D5CEA3D1C18DB2800373148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = sw_bridgeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.intcloud.sw-bridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sw_bridge.app/sw_bridge";
+			};
+			name = Debug;
+		};
+		4D5CEA3E1C18DB2800373148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = sw_bridgeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.intcloud.sw-bridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sw_bridge.app/sw_bridge";
+			};
+			name = Release;
+		};
 		4D9E06621BC72AD2009B1499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,57 +499,25 @@
 			};
 			name = Release;
 		};
-		4D9E06681BC72AD2009B1499 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = swift_bridgeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Intcloud.swift-bridgeTests";
-				PRODUCT_NAME = bridging;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bridging.app/bridging";
-			};
-			name = Debug;
-		};
-		4D9E06691BC72AD2009B1499 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = swift_bridgeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Intcloud.swift-bridgeTests";
-				PRODUCT_NAME = bridging;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bridging.app/bridging";
-			};
-			name = Release;
-		};
-		4D9E066B1BC72AD2009B1499 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swift_bridgeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Intcloud.swift-bridgeUITests";
-				PRODUCT_NAME = bridging;
-				TEST_TARGET_NAME = swift_bridge;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		4D9E066C1BC72AD2009B1499 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swift_bridgeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Intcloud.swift-bridgeUITests";
-				PRODUCT_NAME = bridging;
-				TEST_TARGET_NAME = swift_bridge;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D5CEA301C18DA2800373148 /* Build configuration list for PBXNativeTarget "sw_bridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5CEA2E1C18DA2800373148 /* Debug */,
+				4D5CEA2F1C18DA2800373148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D5CEA3C1C18DB2800373148 /* Build configuration list for PBXNativeTarget "sw_bridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5CEA3D1C18DB2800373148 /* Debug */,
+				4D5CEA3E1C18DB2800373148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4D9E06371BC72AD1009B1499 /* Build configuration list for PBXProject "bridging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -511,24 +532,6 @@
 			buildConfigurations = (
 				4D9E06651BC72AD2009B1499 /* Debug */,
 				4D9E06661BC72AD2009B1499 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D9E06671BC72AD2009B1499 /* Build configuration list for PBXNativeTarget "bridgingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D9E06681BC72AD2009B1499 /* Debug */,
-				4D9E06691BC72AD2009B1499 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D9E066A1BC72AD2009B1499 /* Build configuration list for PBXNativeTarget "bridgingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D9E066B1BC72AD2009B1499 /* Debug */,
-				4D9E066C1BC72AD2009B1499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

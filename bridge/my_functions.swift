@@ -142,10 +142,10 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 */
 
 func pop_message(my_message: String) {
-     var window: UIWindow?
+  //   var window: UIWindow?
     // Show an alert if application is active
     if UIApplication.sharedApplication().applicationState == .Active {
-       var alert = UIAlertView(title: nil, message: my_message, delegate: nil, cancelButtonTitle: "OK");   alert.show();
+       let alert = UIAlertView(title: nil, message: my_message, delegate: nil, cancelButtonTitle: "OK");   alert.show();
     } else {
         // Otherwise present a local notification
         let notification = UILocalNotification()

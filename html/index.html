@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple bridge to Swift</title>
+  <style>
+      * {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+      </style>
+</head>
+<body>
+  <h1 id="exchange">after 5 seconds, JS will call IOS</h1>
+  <button onclick="call_sw1()"> call alert from IOS native </button>
+   <button onclick="call_sw2()"> alert from JS </button>
+    <button onclick="call_geo()"> get IOS geolocation </button>
+    <button onclick="slide_in()"> slidein another page </button>
+</body>
+
+  <script type="text/javascript">
+      
+      
+    setTimeout(function(){
+      window.location  = 'bridge:hello';
+   
+    },5000);
+/*
+    setTimeout(function(){
+    document.getElementById("exchange").innerHTML = "Now sending a notification";
+    call_sw1();
+               
+    },10000);
+*/    
+  function call_sw1() {
+      myparam ="message from JS + alert from IOS";
+    window.location = 'bridge:ios_alert?param=' + myparam;
+    }
+  function call_geo() {
+      myparam ="";
+      window.location = 'bridge:ios_geo';
+  }
+//call from IOS to use this function
+  function ios_to_js(txt){
+      document.getElementById("exchange").innerHTML = txt;
+      return "this is the data from js";
+  }
+  
+  function call_sw2() {
+      alert("alert from js, looks ugly with the file name on top");
+  }
+  function slide_in() {
+     // window.location = 'bridge:ios_push?param=' + 'http://www.google.com';
+      document.location = 'bridge:ios_popup?param=' + 'html/sub/index.html';
+  }
+  </script>
+
+
+</html>

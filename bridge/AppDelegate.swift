@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-        if !is_network_on() {  alert("Konvo", message: "An internet connection is required to use Konvo application"); }
+        if !is_network_on() {  alert("Bridge", message: "An internet connection is required to use this application"); }
     }
 
     func applicationDidBecomeActive(application: UIApplication) {

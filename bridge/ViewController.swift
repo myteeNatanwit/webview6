@@ -148,49 +148,6 @@ let locationManager = CLLocationManager();
     }
     
    
-    func get_new_page(txt: String) {
-
-     //create webview
-        let myWebView:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height ))
-        
-     // format txt to NSURL
-        let full_path = NSURL (string: txt);
-     // detect the protocol
-        let scheme = full_path!.scheme;
-     //get filename put of it
-        let filename = full_path!.lastPathComponent;
-     // get path out of it
-        let pathPrefix = txt.stringByDeletingLastPathComponent;
-        print(pathPrefix + " " + filename!);
-        let root_dir = "";
-     //it is local file
-        var myurl = NSBundle.mainBundle().URLForResource( filename, withExtension: "", subdirectory: root_dir + pathPrefix);
-     //or a link?
-        if (scheme == "http") || (scheme == "https") {
-            myurl = full_path;
-        }
-        
-        let requestObj = NSURLRequest(URL: myurl!);
-         myWebView.loadRequest(requestObj);
-        
-// add the webview into the uiviewcontroller
-        let screen_name = "popup";
-        // load uiview from nib
-        let viewController = popup(nibName: screen_name, bundle: nil);
-
-  
-        viewController.view.addSubview(myWebView);
-        viewController.view.sendSubviewToBack(myWebView);
-
-        
-        if navigationController != nil {
-            self.navigationController?.pushViewController(viewController, animated: true)
-        
-        } else {
-            presentViewController(viewController, animated: true, completion: nil);
-        }
-       
-    };
     
     
 //override main view controller
